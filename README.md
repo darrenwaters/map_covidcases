@@ -17,7 +17,7 @@ A few things to highlight - the pivot table automatically showed time as **Month
 
 I also wanted to calculate the % of the LA population, and Wales, have tested positive in total and over time. To do this I downloaded the ONS' recent mid year population estimates, and from that built a quick pivot table pulling out the LA pop stats in Wales.
 
-From there I could add that information to my working sheet, and start to do a calculation - e.g. total positive tests / total population = positive infection rate.
+From there I could add that information to my working sheet, and start to do a calculation - e.g. total positive tests / total population = positive infection rate. I also used the =LEFT with & function to be table to express the rate as "1 in XXX" - which pleased me!
 
 What stood out to me was that Wales was approaching almost 1 in 100 people testing positive for Coronavirus - and how the rate varied across Wales. That felt like a nice story, and something to visualise.
 
