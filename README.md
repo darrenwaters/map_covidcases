@@ -13,9 +13,14 @@ Interestingly, PHW does not make this data - which includes daily testing figure
 
 From there I built a pivot table which allowed me to see the monthly cumulative positive cases for each LA going back to February this year. From there I could see the change over time and start to think about what story do I want to tell based on what the data is showing.
 
-A few things to highlight - the pivot table automatically showed time as Months. I'm guessing that might "hide" some interesting week to week changes but I don't know how to turn that into displaying weeks. I probably need to find a way to aggregate up daily data into weekly data - taking into account blank days, i.e. if there were no tests that day does that mean the date doesn't appear in the sheet, but I think this is something R can do more effectively.
+A few things to highlight - the pivot table automatically showed time as **Months**. I'm guessing that might "hide" some interesting week to week changes but I don't know how to turn that into displaying weeks. I probably need to find a way to aggregate up daily data into weekly data - taking into account blank days, i.e. if there were no tests that day does that mean the date doesn't appear in the sheet, but I think this is something R can do more effectively.
 
 I also wanted to calculate the % of the LA population, and Wales, have tested positive in total and over time. To do this I downloaded the ONS' recent mid year population estimates, and from that built a quick pivot table pulling out the LA pop stats in Wales.
 
 From there I could add that information to my working sheet, and start to do a calculation - e.g. total positive tests / total population = positive infection rate.
 
+What stood out to me was that Wales was approaching almost 1 in 100 people testing positive for Coronavirus - and how the rate varied across Wales. That felt like a nice story, and something to visualise.
+
+Thankfully Flourish has the geometry for all of Wales' LAs - but try as I might I couldn't get VLOOKUP to pull the geometry information from one sheet and match to my sheet with my LA data such as total cases/rates. But once I had filtered and done some sorting - it sort of worked.
+
+From there I built my map. I had hoped to do something more interesting with changing rates over time - but in the end decided to KISS it. (Keep it simple, stupid). And so there you have it - one simple story, and one simple map.
